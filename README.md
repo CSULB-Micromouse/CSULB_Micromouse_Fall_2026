@@ -1,4 +1,4 @@
-#CSULB Micromouse
+# CSULB Micromouse
 
 # First Time Setup 
 
