@@ -1,12 +1,11 @@
 #include "gpio_driver.h"
-#include <stdint.h>
+#include "stm32f4xx_hal_gpio.h"
 
-void Enable_GPIO_Clk(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin){
+void Enable_GPIO_Clk(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin){
     RCC->AHB2ENR |= GPIO_Pin;
 }
 
-void GPIO_Output_Mode_Enable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
-{
+void GPIO_Output_Mode_Enable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin){
     uint8_t pin_pos;
 
     for (pin_pos = 0; pin_pos < 16; pin_pos++)
@@ -21,6 +20,7 @@ void GPIO_Output_Mode_Enable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
         }
     }
 }
+
 
 void Push_Pull_enable(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin){
     GPIOx->OTYPER &= ~GPIO_Pin;

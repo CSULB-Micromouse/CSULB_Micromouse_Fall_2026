@@ -1,9 +1,10 @@
 #pragma once
 
+#include "stm32f411xe.h"
+#include <stdint.h>
 #ifdef __cplusplus
 extern "C" {
 #endif
-
 
 #include "main.h"
 
@@ -66,3 +67,4 @@ void GPIO_Toggle(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 #ifdef __cplusplus
 }
 #endif
+

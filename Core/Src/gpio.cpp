@@ -1,5 +1,4 @@
-#include "GPIO.hpp"
-#include "gpio_driver.h"
+#include "gpio.hpp"
 
 GPIO::GPIO(GPIO_TypeDef* port, uint16_t pin)
     : port(port), pin(pin)

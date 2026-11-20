@@ -4,6 +4,10 @@
 #include "motor_pwm.h"
 #include "cmsis_os2.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif    
+
 //for speed pwm use brake not coast
 void motor_init(void);
 
@@ -18,6 +22,10 @@ void motor_brake();
 void motor_right(uint32_t speed);
 
 void motor_left(uint32_t speed);
+
+#ifdef __cplusplus
+}
+#endif
 
 /*
 A strategy we could possibly implement is to use 
