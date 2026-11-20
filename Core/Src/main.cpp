@@ -70,9 +70,6 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM11_Init();
 
-  /* Init scheduler */
-  osKernelInitialize();
-
   /* Create the thread(s) */
   /* creation of defaultTask */
     BaseType_t result = xTaskCreate(
@@ -137,6 +134,7 @@ int main(void)
   vTaskStartScheduler();
 
   /* We should never get here as control is now taken by the scheduler */
+  Error_Handler();
   /* Infinite loop */
   while (1)
   {
