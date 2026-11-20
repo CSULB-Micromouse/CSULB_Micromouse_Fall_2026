@@ -13,7 +13,7 @@ set(MX_Include_Dirs
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Inc/sys_files
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/Bare_Metal/inc
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/Bare_Metal/I_hate_bare_metal_HALs/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/I_hate_bare_metal_HALs/inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32F4xx_HAL_Driver/Inc
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Middlewares/Third_Party/FreeRTOS/Source/include

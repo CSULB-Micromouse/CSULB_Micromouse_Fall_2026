@@ -51,7 +51,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 file(GLOB_RECURSE USER_SOURCES CONFIGURE_DEPENDS
-    "${CMAKE_SOURCE_DIR}/Drivers/Bare_Metal/I_hate_bare_metal_HALs/src/*.c"
+    "${CMAKE_SOURCE_DIR}/Drivers/I_hate_bare_metal_HALs/src/*.c"
     "${CMAKE_SOURCE_DIR}/Drivers/Bare_Metal/src/*.c"
     "${CMAKE_SOURCE_DIR}/Core/Src/*.cpp"
 )
@@ -71,7 +71,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     /core/inc
     /Drivers/Bare_Metal/inc
-    /Drivers/Bare_Metal/I_hate_bare_metal_HALs/inc
+    /Drivers/I_hate_bare_metal_HALs/inc
 )
 
 # Add project symbols (macros)

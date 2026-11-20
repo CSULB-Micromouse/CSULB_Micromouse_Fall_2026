@@ -34,10 +34,6 @@
 #include "gpio.hpp"
 #include "motor_driver.h"
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-*/
 
 void StartDefaultTask(void *argument);
 void IR_sensor_task(void *argument);
