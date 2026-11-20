@@ -187,7 +187,7 @@ void BLE_telemetry_task(void *argument)
   /* Infinite loop */
   while(1)
   {
-
+    vTaskDelay(10);
   }
   /* USER CODE END 5 */
 }
@@ -199,7 +199,7 @@ void IMU_task(void *argument)
   /* Infinite loop */
   while(1)
   {
-
+    vTaskDelay(10);
   }
   /* USER CODE END 5 */
 }
