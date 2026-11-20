@@ -33,6 +33,7 @@
 #include "system_clock.h"
 #include "gpio.hpp"
 #include "motor_driver.h"
+#include "i2c1.h"
 
 
 void StartDefaultTask(void *argument);
