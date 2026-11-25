@@ -20,6 +20,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "FreeRTOS.h"
+#include "stm32f4xx_hal_i2c.h"
 #include "task.h"
 #include "queue.h"
 #include "semphr.h"
@@ -139,7 +140,7 @@ int main(void)
   /* Infinite loop */
   while (1)
   {
-
+    
   }
 }
 
@@ -154,11 +155,13 @@ int main(void)
 void StartDefaultTask(void *argument)
 {
   /* Infinite loop */
-  GPIO LED(GPIOB,GPIO_PIN_13);
+  GPIO LED(GPIOA,GPIO_PIN_5);
   motor_init();
   while(1)
   {
     motor_brake();
+    LED.toggle();
+    vTaskDelay(100);
   }
 }
 
