@@ -161,7 +161,7 @@ void StartDefaultTask(void *argument)
   {
     motor_brake();
     LED.toggle();
-    vTaskDelay(100);
+    vTaskDelay(50);
   }
 }
 
