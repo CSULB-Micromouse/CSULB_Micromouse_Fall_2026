@@ -10,7 +10,7 @@ Go to Extensions in VS Code.
 
 Install **Simple Task Buttons**.
 
-<img width="100" alt="image" src="https://github.com/user-attachments/assets/f3345917-7e51-4cf4-a5da-646948b7ffa5" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/f3345917-7e51-4cf4-a5da-646948b7ffa5" />
 
 Install **STM32CubeIDE for Visual Studio Code**.
 
